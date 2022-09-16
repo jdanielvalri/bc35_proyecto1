@@ -12,6 +12,6 @@ public abstract class Cliente {
 	private Integer id;
 	private Mono<Object> tarjetaCredito;
 	
-	private E_Type type;
+	private E_Type type; //
 
 }
