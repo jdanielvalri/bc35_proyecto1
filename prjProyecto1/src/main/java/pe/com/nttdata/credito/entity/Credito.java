@@ -4,7 +4,7 @@ import pe.com.nttdata.cliente.entity.Cliente;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-public abstract class Credito {
+public  class Credito {
 
 	private Integer id;
 	private Mono<Cliente> cliente;

@@ -1,12 +1,15 @@
 package pe.com.nttdata.cliente.entity;
 
+import lombok.Data;
 import pe.com.nttdata.credito.entity.CreditoEmpresarial;
-import pe.com.nttdata.ctabancaria.entity.CtaCorriente;
-import reactor.core.publisher.Flux;
+import pe.com.nttdata.ctabancaria.entity.CtaBancariaCorriente;
 
+import java.util.List;
+
+@Data
 public class ClienteEmpresarial extends Cliente {
 
-	private Flux<CtaCorriente> ctaCorriente;
-	private Flux<CreditoEmpresarial> creditoEmpresarial;
+	private List<CtaBancariaCorriente> ctaCorriente;
+	private List<CreditoEmpresarial> creditoEmpresarial;
 	
 }

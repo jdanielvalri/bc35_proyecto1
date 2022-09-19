@@ -1,16 +1,15 @@
 package pe.com.nttdata.ctabancaria.entity;
 
-import java.time.DateTimeException;
-import java.time.LocalDate;
+import lombok.Data;
+import pe.com.nttdata.enumerador.ETipoMovimientoCtaBancaria;
 
+import java.util.Date;
+
+@Data
 public class MovimientoCtaBancaria {
-	
-	public enum E_Type{
-		RETIRO, DEPOSITO
-	}
-	
-	private E_Type type;
-	private LocalDate Fecha;
+
+	private ETipoMovimientoCtaBancaria type;
+	private Date fecha;
 	private double monto;
 	
 

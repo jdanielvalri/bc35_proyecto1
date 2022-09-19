@@ -1,17 +1,19 @@
 package pe.com.nttdata.cliente.entity;
 
+import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import pe.com.nttdata.credito.entity.TarjetaCredito;
+import pe.com.nttdata.enumerador.ETipoCliente;
 import reactor.core.publisher.Mono;
 
-public abstract class Cliente {
-	
-	public enum E_Type {
-		PERSONAL ,
-		EMPRESARIAL 
-	}
-	
+import java.util.List;
+
+@Data
+public  class Cliente {
+
 	private Integer id;
-	private Mono<Object> tarjetaCredito;
-	
-	private E_Type type;
+	private List<TarjetaCredito> tarjetaCredito;
+	private ETipoCliente type;
 
 }
