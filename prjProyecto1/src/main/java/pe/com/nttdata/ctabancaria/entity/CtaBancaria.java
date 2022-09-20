@@ -17,7 +17,7 @@ public class CtaBancaria {
 	private int LimiteMaxMovimientoMensual;
 	
 	private Cliente cliente;
-	private Flux<MovimientoCta> movimientos;
+	private List<MovimientoCta> movimientos;
 	private ETipoCtaBancaria type;
 	
 	private double montoDisponible;		// Calculado

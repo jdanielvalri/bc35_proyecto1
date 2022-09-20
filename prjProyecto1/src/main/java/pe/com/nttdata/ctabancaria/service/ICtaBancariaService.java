@@ -8,7 +8,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface ICtaBancariaService <T extends CtaBancaria> {
-	
+
 	void crear(Mono<T> ctaBancaria);
 	
 	void eliminar(Mono<T> ctaBancaria);

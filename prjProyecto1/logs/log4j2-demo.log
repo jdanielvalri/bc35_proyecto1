@@ -1,78 +1,71 @@
-2022-09-19 18:42:15.032  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Starting PrjProyecto1Application using Java 11.0.15.1 on LIM-FVJ98C3 with PID 10904 (C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1\target\classes started by jvalenri in C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1)
-2022-09-19 18:42:15.061  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : No active profile set, falling back to 1 default profile: "default"
-2022-09-19 18:42:20.513  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2022-09-19 18:42:20.661  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 0 Reactive MongoDB repository interfaces.
-2022-09-19 18:42:31.402  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@20216016, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@2b441e56], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@267891bf]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3a109ff7], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-2022-09-19 18:42:33.717  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 13 endpoint(s) beneath base path '/actuator'
-2022-09-19 18:42:37.134  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8089
-2022-09-19 18:42:37.341  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Started PrjProyecto1Application in 24.619 seconds (JVM running for 30.779)
-2022-09-19 18:42:37.565  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:90}] to localhost:27017
-2022-09-19 18:42:37.565  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:91}] to localhost:27017
-2022-09-19 18:42:37.576  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=419299500}
-2022-09-19 18:44:31.785  INFO LIM-FVJ98C3 --- [ctor-http-nio-3] n.s.i.CtaCorrienteEmpresarialServiceImpl : validarTitular
-2022-09-19 18:44:31.790 ERROR LIM-FVJ98C3 --- [ctor-http-nio-3] p.c.n.s.i.CtaCorrienteServiceImpl        : Debe ingresar al menos un titular para la cuenta
-2022-09-19 18:50:08.838  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Info log
-2022-09-19 18:50:08.856  WARN LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Hey, This is a warning!
-2022-09-19 18:50:08.858 ERROR LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Oops! We have an Error. OK
-2022-09-19 18:50:08.859 FATAL LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Damn! Fatal error. Please fix me.
-2022-09-19 18:50:11.766  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Starting PrjProyecto1Application using Java 11.0.15.1 on LIM-FVJ98C3 with PID 13984 (C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1\target\classes started by jvalenri in C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1)
-2022-09-19 18:50:11.774  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : No active profile set, falling back to 1 default profile: "default"
-2022-09-19 18:50:17.547  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2022-09-19 18:50:17.670  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 0 Reactive MongoDB repository interfaces.
-2022-09-19 18:50:28.751  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@20216016, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@2b441e56], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@267891bf]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3a109ff7], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-2022-09-19 18:50:30.890  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 13 endpoint(s) beneath base path '/actuator'
-2022-09-19 18:50:33.395  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8089
-2022-09-19 18:50:33.576  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Started PrjProyecto1Application in 24.213 seconds (JVM running for 30.827)
-2022-09-19 18:50:33.772  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:93}] to localhost:27017
-2022-09-19 18:50:33.772  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:92}] to localhost:27017
-2022-09-19 18:50:33.782  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=365628800}
-2022-09-19 18:54:19.175 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Debugging log
-2022-09-19 18:54:19.216  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Info log
-2022-09-19 18:54:19.217  WARN LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Hey, This is a warning!
-2022-09-19 18:54:19.218 ERROR LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Oops! We have an Error. OK
-2022-09-19 18:54:19.221 FATAL LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Damn! Fatal error. Please fix me.
-2022-09-19 18:54:22.914  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Starting PrjProyecto1Application using Java 11.0.15.1 on LIM-FVJ98C3 with PID 3560 (C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1\target\classes started by jvalenri in C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1)
-2022-09-19 18:54:22.918 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Running with Spring Boot v2.7.3, Spring v5.3.22
-2022-09-19 18:54:22.929  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : No active profile set, falling back to 1 default profile: "default"
-2022-09-19 18:54:28.956  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2022-09-19 18:54:29.106  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 0 Reactive MongoDB repository interfaces.
-2022-09-19 18:54:41.412  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@23564dd2, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@54895681], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@2dd0a0d0]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@6bf570c], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-2022-09-19 18:54:45.002  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 13 endpoint(s) beneath base path '/actuator'
-2022-09-19 18:54:48.449  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8089
-2022-09-19 18:54:48.726  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Started PrjProyecto1Application in 28.98 seconds (JVM running for 36.355)
-2022-09-19 18:54:48.939  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:94}] to localhost:27017
-2022-09-19 18:54:48.939  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:95}] to localhost:27017
-2022-09-19 18:54:48.945  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=504409400}
-2022-09-19 18:56:15.535 DEBUG LIM-FVJ98C3 --- [ctor-http-nio-3] p.c.n.s.i.CtaCorrienteServiceImpl        : Iniciando registro de cuenta corriente
-2022-09-19 18:56:15.536  INFO LIM-FVJ98C3 --- [ctor-http-nio-3] n.s.i.CtaCorrienteEmpresarialServiceImpl : validarTitular
-2022-09-19 18:56:15.537 ERROR LIM-FVJ98C3 --- [ctor-http-nio-3] p.c.n.s.i.CtaCorrienteServiceImpl        : Debe ingresar al menos un titular para la cuenta
-2022-09-20 01:48:08.101  INFO LAPTOP-3KTEPNVU --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [pe.com.nttdata.PrjProyecto1ApplicationTests], using SpringBootContextLoader
-2022-09-20 01:48:08.105  INFO LAPTOP-3KTEPNVU --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [pe.com.nttdata.PrjProyecto1ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-2022-09-20 01:48:08.106  INFO LAPTOP-3KTEPNVU --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pe.com.nttdata.PrjProyecto1ApplicationTests]: PrjProyecto1ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2022-09-20 01:48:08.165  INFO LAPTOP-3KTEPNVU --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pe.com.nttdata.PrjProyecto1Application for test class pe.com.nttdata.PrjProyecto1ApplicationTests
-2022-09-20 01:48:08.222  INFO LAPTOP-3KTEPNVU --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2022-09-20 01:48:08.231  INFO LAPTOP-3KTEPNVU --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e742e4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@175acfb2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a03bb68, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4e868ef5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71c905a3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@30af7377, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@67a056f1, org.springframework.test.context.event.EventPublishingTestExecutionListener@1dab9dd6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@247667dd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6f099cef, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@afb5821, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4bff2185, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c20ffa8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7fedfe27]
-2022-09-20 01:48:08.392  INFO LAPTOP-3KTEPNVU --- [           main] p.c.n.PrjProyecto1ApplicationTests       : Starting PrjProyecto1ApplicationTests using Java 11.0.16 on LAPTOP-3KTEPNVU with PID 14476 (started by Walter in D:\WKS_Eclipse\bc35_proyecto1\prjProyecto1)
-2022-09-20 01:48:08.393 DEBUG LAPTOP-3KTEPNVU --- [           main] p.c.n.PrjProyecto1ApplicationTests       : Running with Spring Boot v2.7.3, Spring v5.3.22
-2022-09-20 01:48:08.395  INFO LAPTOP-3KTEPNVU --- [           main] p.c.n.PrjProyecto1ApplicationTests       : No active profile set, falling back to 1 default profile: "default"
-2022-09-20 01:48:08.888  INFO LAPTOP-3KTEPNVU --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2022-09-20 01:48:08.897  INFO LAPTOP-3KTEPNVU --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Reactive MongoDB repository interfaces.
-2022-09-20 01:48:10.251  INFO LAPTOP-3KTEPNVU --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.16+11-LTS-199"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@63b4b9c6, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@6c66ddab], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@603f4e3e]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@45fb2354], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-2022-09-20 01:48:10.526  INFO LAPTOP-3KTEPNVU --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 13 endpoint(s) beneath base path '/actuator'
-2022-09-20 01:48:10.541  INFO LAPTOP-3KTEPNVU --- [localhost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server localhost:27017
-com.mongodb.MongoSocketOpenException: Exception opening socket
-	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:520)
-	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:488)
-	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
-	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
-	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
-	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
-	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+2022-09-20 12:47:26.226 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Debugging log
+2022-09-20 12:47:26.228  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Info log
+2022-09-20 12:47:26.228  WARN LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Hey, This is a warning!
+2022-09-20 12:47:26.228 ERROR LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Oops! We have an Error. OK
+2022-09-20 12:47:26.637  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Starting PrjProyecto1Application using Java 11.0.15.1 on LIM-FVJ98C3 with PID 13004 (C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1\target\classes started by jvalenri in C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1)
+2022-09-20 12:47:26.637 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-09-20 12:47:26.638  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : No active profile set, falling back to 1 default profile: "default"
+2022-09-20 12:47:27.682  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-20 12:47:27.703  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Reactive MongoDB repository interfaces.
+2022-09-20 12:47:29.063  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@7f6b7426, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@687eb455], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6d969330]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@4861cca9], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-20 12:47:29.314  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-09-20 12:47:29.568  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8089
+2022-09-20 12:47:29.591  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Started PrjProyecto1Application in 3.29 seconds (JVM running for 4.203)
+2022-09-20 12:47:29.603  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:97}] to localhost:27017
+2022-09-20 12:47:29.603  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:96}] to localhost:27017
+2022-09-20 12:47:29.604  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=56229700}
+2022-09-20 12:47:45.291 DEBUG LIM-FVJ98C3 --- [ctor-http-nio-3] p.c.n.s.i.CtaCorrienteServiceImpl        : Iniciando registro de cuenta corriente
+2022-09-20 12:47:45.294  WARN LIM-FVJ98C3 --- [ctor-http-nio-3] r.c.Exceptions                           : throwIfFatal detected a jvm fatal exception, which is thrown and logged below:
+java.lang.NoSuchMethodError: pe.com.nttdata.cliente.entity.Cliente.getType()Lpe/com/nttdata/enumerador/ETipoCliente;
+	at pe.com.nttdata.service.impl.CtaCorrienteServiceImpl.save(CtaCorrienteServiceImpl.java:35)
+	at pe.com.nttdata.controller.CtaCorrienteController.save(CtaCorrienteController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:400)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:600)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:258)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:299)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
 	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
 	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
 	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
@@ -80,13 +73,57 @@ com.mongodb.MongoSocketOpenException: Exception opening socket
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:27017
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+2022-09-20 12:47:45.297  WARN LIM-FVJ98C3 --- [ctor-http-nio-3] r.c.Exceptions                           : throwIfFatal detected a jvm fatal exception, which is thrown and logged below:
+java.lang.NoSuchMethodError: pe.com.nttdata.cliente.entity.Cliente.getType()Lpe/com/nttdata/enumerador/ETipoCliente;
+	at pe.com.nttdata.service.impl.CtaCorrienteServiceImpl.save(CtaCorrienteServiceImpl.java:35)
+	at pe.com.nttdata.controller.CtaCorrienteController.save(CtaCorrienteController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:400)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:600)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:258)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:299)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
 	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
 	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
 	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
@@ -94,4 +131,272 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2022-09-20 01:48:10.891  INFO LAPTOP-3KTEPNVU --- [           main] p.c.n.PrjProyecto1ApplicationTests       : Started PrjProyecto1ApplicationTests in 2.636 seconds (JVM running for 4.306)
+2022-09-20 12:47:45.298 ERROR LIM-FVJ98C3 --- [ctor-http-nio-3] r.n.c.ChannelOperationsHandler           : [09617a89-1, L:/0:0:0:0:0:0:0:1:8089 - R:/0:0:0:0:0:0:0:1:58518] Error was received while reading the incoming data. The connection will be closed.
+java.lang.NoSuchMethodError: pe.com.nttdata.cliente.entity.Cliente.getType()Lpe/com/nttdata/enumerador/ETipoCliente;
+	at pe.com.nttdata.service.impl.CtaCorrienteServiceImpl.save(CtaCorrienteServiceImpl.java:35)
+	at pe.com.nttdata.controller.CtaCorrienteController.save(CtaCorrienteController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:400)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:600)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:258)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:299)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-20 12:47:45.304  WARN LIM-FVJ98C3 --- [ctor-http-nio-3] r.n.c.FluxReceive                        : [09617a89-1, L:/0:0:0:0:0:0:0:1:8089 ! R:/0:0:0:0:0:0:0:1:58518] An exception has been observed post termination, use DEBUG level to see the full stack: java.lang.NoSuchMethodError: pe.com.nttdata.cliente.entity.Cliente.getType()Lpe/com/nttdata/enumerador/ETipoCliente;
+2022-09-20 12:51:49.268 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Debugging log
+2022-09-20 12:51:49.270  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Info log
+2022-09-20 12:51:49.270  WARN LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Hey, This is a warning!
+2022-09-20 12:51:49.270 ERROR LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Oops! We have an Error. OK
+2022-09-20 12:51:49.643  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Starting PrjProyecto1Application using Java 11.0.15.1 on LIM-FVJ98C3 with PID 11812 (C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1\target\classes started by jvalenri in C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1)
+2022-09-20 12:51:49.643 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-09-20 12:51:49.646  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : No active profile set, falling back to 1 default profile: "default"
+2022-09-20 12:51:50.411  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-20 12:51:50.430  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Reactive MongoDB repository interfaces.
+2022-09-20 12:51:51.874  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@a21c74, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@b8a144e], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@5fb8dc01]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3e38c472], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-20 12:51:52.090  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-09-20 12:51:52.396  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8089
+2022-09-20 12:51:52.422  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Started PrjProyecto1Application in 3.098 seconds (JVM running for 3.846)
+2022-09-20 12:51:52.443  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:98}] to localhost:27017
+2022-09-20 12:51:52.443  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:99}] to localhost:27017
+2022-09-20 12:51:52.444  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=47156800}
+2022-09-20 12:52:16.768 DEBUG LIM-FVJ98C3 --- [ctor-http-nio-3] p.c.n.s.i.CtaCorrienteServiceImpl        : Iniciando registro de cuenta corriente
+2022-09-20 12:52:16.770  WARN LIM-FVJ98C3 --- [ctor-http-nio-3] r.c.Exceptions                           : throwIfFatal detected a jvm fatal exception, which is thrown and logged below:
+java.lang.NoSuchMethodError: pe.com.nttdata.cliente.entity.Cliente.getType()Lpe/com/nttdata/enumerador/ETipoCliente;
+	at pe.com.nttdata.service.impl.CtaCorrienteServiceImpl.save(CtaCorrienteServiceImpl.java:35)
+	at pe.com.nttdata.controller.CtaCorrienteController.save(CtaCorrienteController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:400)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:600)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:258)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:299)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-20 12:52:16.773  WARN LIM-FVJ98C3 --- [ctor-http-nio-3] r.c.Exceptions                           : throwIfFatal detected a jvm fatal exception, which is thrown and logged below:
+java.lang.NoSuchMethodError: pe.com.nttdata.cliente.entity.Cliente.getType()Lpe/com/nttdata/enumerador/ETipoCliente;
+	at pe.com.nttdata.service.impl.CtaCorrienteServiceImpl.save(CtaCorrienteServiceImpl.java:35)
+	at pe.com.nttdata.controller.CtaCorrienteController.save(CtaCorrienteController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:400)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:600)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:258)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:299)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-20 12:52:16.774 ERROR LIM-FVJ98C3 --- [ctor-http-nio-3] r.n.c.ChannelOperationsHandler           : [c7ec0e56-1, L:/0:0:0:0:0:0:0:1:8089 - R:/0:0:0:0:0:0:0:1:54415] Error was received while reading the incoming data. The connection will be closed.
+java.lang.NoSuchMethodError: pe.com.nttdata.cliente.entity.Cliente.getType()Lpe/com/nttdata/enumerador/ETipoCliente;
+	at pe.com.nttdata.service.impl.CtaCorrienteServiceImpl.save(CtaCorrienteServiceImpl.java:35)
+	at pe.com.nttdata.controller.CtaCorrienteController.save(CtaCorrienteController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:144)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:251)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:336)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:400)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:600)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:258)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:299)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-09-20 12:52:16.780  WARN LIM-FVJ98C3 --- [ctor-http-nio-3] r.n.c.FluxReceive                        : [c7ec0e56-1, L:/0:0:0:0:0:0:0:1:8089 ! R:/0:0:0:0:0:0:0:1:54415] An exception has been observed post termination, use DEBUG level to see the full stack: java.lang.NoSuchMethodError: pe.com.nttdata.cliente.entity.Cliente.getType()Lpe/com/nttdata/enumerador/ETipoCliente;
+2022-09-20 12:58:18.724 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Debugging log
+2022-09-20 12:58:18.727  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Info log
+2022-09-20 12:58:18.727  WARN LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Hey, This is a warning!
+2022-09-20 12:58:18.727 ERROR LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Oops! We have an Error. OK
+2022-09-20 12:58:19.097  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Starting PrjProyecto1Application using Java 11.0.15.1 on LIM-FVJ98C3 with PID 16136 (C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1\target\classes started by jvalenri in C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjProyecto1)
+2022-09-20 12:58:19.098 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-09-20 12:58:19.099  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : No active profile set, falling back to 1 default profile: "default"
+2022-09-20 12:58:19.814  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-20 12:58:19.828  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Reactive MongoDB repository interfaces.
+2022-09-20 12:58:20.955  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@8eb6f9a, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@29170a47], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@2a8f8555]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@402b4f81], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-20 12:58:21.146  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-09-20 12:58:21.379  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8089
+2022-09-20 12:58:21.416  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjProyecto1Application            : Started PrjProyecto1Application in 2.639 seconds (JVM running for 3.458)
+2022-09-20 12:58:21.437  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:101}] to localhost:27017
+2022-09-20 12:58:21.437  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:100}] to localhost:27017
+2022-09-20 12:58:21.438  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=57726800}
+2022-09-20 13:00:07.235  INFO LIM-FVJ98C3 --- [ctor-http-nio-3] i.CtaBancariaCorrienteEmpresarialService : validarTitular
+2022-09-20 13:00:07.242  INFO LIM-FVJ98C3 --- [ctor-http-nio-3] p.c.n.c.r.i.CtaCorrienteRepository       : Se registró la cta corriente

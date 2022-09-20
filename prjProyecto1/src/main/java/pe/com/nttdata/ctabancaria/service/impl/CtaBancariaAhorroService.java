@@ -1,5 +1,6 @@
 package pe.com.nttdata.ctabancaria.service.impl;
 
+import org.springframework.stereotype.Service;
 import pe.com.nttdata.ctabancaria.entity.CtaBancariaAhorro;
 import pe.com.nttdata.ctabancaria.entity.Deposito;
 import pe.com.nttdata.ctabancaria.entity.MovimientoCta;
@@ -8,6 +9,7 @@ import pe.com.nttdata.ctabancaria.service.ICtaBancariaAhorroService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@Service
 public class CtaBancariaAhorroService implements ICtaBancariaAhorroService {
 
 	@Override
