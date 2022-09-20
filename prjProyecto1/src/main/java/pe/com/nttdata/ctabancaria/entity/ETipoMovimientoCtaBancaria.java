@@ -1,4 +1,4 @@
-package pe.com.nttdata.enumerador;
+package pe.com.nttdata.ctabancaria.entity;
 
 public enum ETipoMovimientoCtaBancaria {
 

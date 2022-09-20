@@ -3,7 +3,6 @@ package pe.com.nttdata.ctabancaria.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import pe.com.nttdata.cliente.entity.Cliente;
-import pe.com.nttdata.enumerador.ETipoCtaBancaria;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -18,7 +17,7 @@ public class CtaBancaria {
 	private int LimiteMaxMovimientoMensual;
 	
 	private Cliente cliente;
-	private List<MovimientoCtaBancaria> movimientosCtaBancaria;
+	private Flux<MovimientoCta> movimientos;
 	private ETipoCtaBancaria type;
 	
 	private double montoDisponible;		// Calculado

@@ -5,13 +5,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 import pe.com.nttdata.ctabancaria.entity.CtaBancariaCorriente;
-import pe.com.nttdata.service.ICtaCorrienteService;
+//import pe.com.nttdata.ctabancaria.service.ICtaCorrienteService;
 import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/ctacorriente")
-public class CtaCorrienteController {
-
+public class REVISARCtaCorrienteController {
+/*
     @Autowired
     @Qualifier("ctacorrienteService")
     private ICtaCorrienteService iCtaCorrienteService;
@@ -21,4 +21,5 @@ public class CtaCorrienteController {
     public Mono<CtaBancariaCorriente> save(@RequestBody CtaBancariaCorriente ctaCorriente){
         return iCtaCorrienteService.save(ctaCorriente);
     }
+    */
 }

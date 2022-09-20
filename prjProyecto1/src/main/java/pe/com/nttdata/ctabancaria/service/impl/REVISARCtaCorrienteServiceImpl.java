@@ -1,24 +1,24 @@
-package pe.com.nttdata.service.impl;
+package pe.com.nttdata.ctabancaria.service.impl;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+
+import pe.com.nttdata.cliente.entity.ETipoCliente;
 import pe.com.nttdata.ctabancaria.entity.CtaBancariaCorriente;
-import pe.com.nttdata.enumerador.ETipoCliente;
-import pe.com.nttdata.repository.ICtaCorrienteRepository;
-import pe.com.nttdata.service.ICtaCorrienteEmpresarialService;
-import pe.com.nttdata.service.ICtaCorrientePersonalService;
-import pe.com.nttdata.service.ICtaCorrienteService;
+import pe.com.nttdata.ctabancaria.repository.ICtaCorrienteRepository;
+/*import pe.com.nttdata.ctabancaria.service.ICtaCorrienteEmpresarialService;
+import pe.com.nttdata.ctabancaria.service.ICtaCorrientePersonalService;
+import pe.com.nttdata.ctabancaria.service.ICtaCorrienteService;*/
 import reactor.core.publisher.Mono;
 
 @Service
 @Qualifier("ctacorrienteService")
-public class CtaCorrienteServiceImpl implements ICtaCorrienteService {
-
-    private static final Logger logger = LogManager.getLogger(CtaCorrienteServiceImpl.class);
+public class REVISARCtaCorrienteServiceImpl {
+/*
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(CtaCorrienteServiceImpl.class);
+    
     @Autowired
     private ICtaCorrientePersonalService iCtaCorrientePersonalService;
     @Autowired
@@ -54,5 +54,5 @@ public class CtaCorrienteServiceImpl implements ICtaCorrienteService {
         return iCtaCorrienteRepository.save(ctaCorriente);
     }
 
-
+*/
 }

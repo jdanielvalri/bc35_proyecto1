@@ -1,9 +1,12 @@
 package pe.com.nttdata.ctabancaria.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 
+import lombok.Data;
+
+@Data
 public class CtaBancariaPlazoFijo extends CtaBancaria {
 	
-	private Date diaUnicoMovimiento;
+	private LocalDate diaUnicoMovimiento;
 
 }

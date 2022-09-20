@@ -12,4 +12,8 @@ public class ClienteEmpresarial extends Cliente {
 	private List<CtaBancariaCorriente> ctaCorriente;
 	private List<CreditoEmpresarial> creditoEmpresarial;
 	
+	public ClienteEmpresarial() {
+		super.setType(ETipoCliente.EMPRESARIAL);
+	}
+	
 }

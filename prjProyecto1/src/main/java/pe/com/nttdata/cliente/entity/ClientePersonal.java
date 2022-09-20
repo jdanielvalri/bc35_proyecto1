@@ -11,4 +11,8 @@ public class ClientePersonal extends Cliente {
 	private CtaBancaria ctaBancaria;
 	private CreditoPersonal creditoPersonal;
 	
+	public ClientePersonal() {
+		super.setType(ETipoCliente.PERSONAL);
+	}
+	
 }

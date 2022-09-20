@@ -1,21 +1,19 @@
-package pe.com.nttdata.service.impl;
+package pe.com.nttdata.ctabancaria.service.impl;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import pe.com.nttdata.ctabancaria.entity.CtaBancariaCorriente;
-import pe.com.nttdata.repository.ICtaCorrienteRepository;
-import pe.com.nttdata.service.ICtaCorrientePersonalService;
+import pe.com.nttdata.ctabancaria.repository.ICtaCorrienteRepository;
+//import pe.com.nttdata.ctabancaria.service.ICtaCorrientePersonalService;
 import reactor.core.publisher.Mono;
 
 @Service
 @Qualifier("ctacorrientePersonalService")
-public class CtaCorrientePersonalServiceImpl implements  ICtaCorrientePersonalService{
-
-    private static final Logger logger = LogManager.getLogger(CtaCorrientePersonalServiceImpl.class);
+public class REVISARCtaCorrientePersonalServiceImpl{
+/*
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(CtaCorrientePersonalServiceImpl.class);
 
     @Autowired
     private ICtaCorrienteRepository iCtaCorrienteRepository;
@@ -45,5 +43,5 @@ public class CtaCorrientePersonalServiceImpl implements  ICtaCorrientePersonalSe
 
         return existe;
     }
-
+*/
 }

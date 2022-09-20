@@ -1,11 +1,11 @@
-package pe.com.nttdata.repository.impl;
+package pe.com.nttdata.ctabancaria.repository.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 import pe.com.nttdata.ctabancaria.entity.CtaBancariaCorriente;
-import pe.com.nttdata.repository.ICtaCorrienteRepository;
-import pe.com.nttdata.service.impl.CtaCorrienteServiceImpl;
+import pe.com.nttdata.ctabancaria.repository.ICtaCorrienteRepository;
+import pe.com.nttdata.ctabancaria.service.impl.REVISARCtaCorrienteServiceImpl;
 import reactor.core.publisher.Mono;
 
 @Repository

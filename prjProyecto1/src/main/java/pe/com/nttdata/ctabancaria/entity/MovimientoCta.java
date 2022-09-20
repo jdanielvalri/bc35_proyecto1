@@ -1,12 +1,11 @@
 package pe.com.nttdata.ctabancaria.entity;
 
 import lombok.Data;
-import pe.com.nttdata.enumerador.ETipoMovimientoCtaBancaria;
 
 import java.util.Date;
 
 @Data
-public class MovimientoCtaBancaria {
+public class MovimientoCta {
 
 	private ETipoMovimientoCtaBancaria type;
 	private Date fecha;

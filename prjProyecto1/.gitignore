@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Eclipse ###
+prjProyecto1/logs/log4j2-demo.log
+/logs/
+!**/logs/
+!**/logs/*.log
