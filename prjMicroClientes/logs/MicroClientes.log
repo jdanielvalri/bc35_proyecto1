@@ -1,0 +1,872 @@
+2022-09-21 14:30:10.073  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Starting PrjMicroClientesApplication using Java 11.0.15.1 on LIM-FVJ98C3 with PID 13296 (C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjMicroClientes\target\classes started by jvalenri in C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjMicroClientes)
+2022-09-21 14:30:10.077 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-09-21 14:30:10.079  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 14:30:11.182  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-21 14:30:11.266  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 2 Reactive MongoDB repository interfaces.
+2022-09-21 14:30:12.498  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@491cafec, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@cbd40c1], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@4fa86cb8]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@54c60202], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-21 14:30:13.119  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:209}] to localhost:27017
+2022-09-21 14:30:13.119  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:210}] to localhost:27017
+2022-09-21 14:30:13.121  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=115029600}
+2022-09-21 14:30:13.530  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-21 14:30:13.736  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8080
+2022-09-21 14:30:13.750  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Started PrjMicroClientesApplication in 4.114 seconds (JVM running for 5.414)
+2022-09-21 14:31:26.132  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Starting PrjMicroClientesApplication using Java 11.0.15.1 on LIM-FVJ98C3 with PID 8056 (C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjMicroClientes\target\classes started by jvalenri in C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjMicroClientes)
+2022-09-21 14:31:26.135 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-09-21 14:31:26.136  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 14:31:26.971  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-21 14:31:27.028  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 Reactive MongoDB repository interfaces.
+2022-09-21 14:31:27.776  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@110e9982, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@5eb0a686], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@73608eb0]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@67f9cb52], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-21 14:31:28.415  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:212}] to localhost:27017
+2022-09-21 14:31:28.415  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:211}] to localhost:27017
+2022-09-21 14:31:28.416  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=56974200}
+2022-09-21 14:31:28.696  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-21 14:31:28.856  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8080
+2022-09-21 14:31:28.871  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Started PrjMicroClientesApplication in 3.018 seconds (JVM running for 3.791)
+2022-09-21 14:33:03.724  INFO LIM-FVJ98C3 --- [ntLoopGroup-3-3] o.m.d.connection                         : Opened connection [connectionId{localValue:3, serverValue:213}] to localhost:27017
+2022-09-21 15:04:47.744  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Starting PrjMicroClientesApplication using Java 11.0.15.1 on LIM-FVJ98C3 with PID 5924 (C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjMicroClientes\target\classes started by jvalenri in C:\Daniel valenzuela\nttdata\cursos\bootcamp\semana1\Proyecto 1\bc35_proyecto1\prjMicroClientes)
+2022-09-21 15:04:47.747 DEBUG LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-09-21 15:04:47.749  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 15:04:48.482  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-21 15:04:48.532  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 2 Reactive MongoDB repository interfaces.
+2022-09-21 15:04:49.251  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@43d65a81, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@9cfc77], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@7418d76e]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@601eb4af], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-21 15:04:49.766  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:215}] to localhost:27017
+2022-09-21 15:04:49.766  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:214}] to localhost:27017
+2022-09-21 15:04:49.778  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=45897600}
+2022-09-21 15:04:50.143  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-21 15:04:50.303  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8080
+2022-09-21 15:04:50.316  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Started PrjMicroClientesApplication in 2.866 seconds (JVM running for 3.655)
+2022-09-21 15:11:50.940  INFO LIM-FVJ98C3 --- [ntLoopGroup-3-3] o.m.d.connection                         : Opened connection [connectionId{localValue:3, serverValue:216}] to localhost:27017
+2022-09-21 15:20:28.915  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-21 15:20:37.421  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microcliente, profiles=[default], label=null, version=dfe96d58dac01ccd3328489ad08e83e3cbf43a9e, state=null
+2022-09-21 15:20:37.421  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-8876266603444860750\microcliente.yml'}]
+2022-09-21 15:20:37.426  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 15:20:38.012  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-21 15:20:38.063  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 2 Reactive MongoDB repository interfaces.
+2022-09-21 15:20:38.195  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=739a2add-111f-318c-9474-8987365f81ac
+2022-09-21 15:20:38.801  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@610fbe1c, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@46d0f89c], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@570b2057]}, clusterSettings={hosts=[locahost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@a457c2b], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-21 15:20:40.027  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-21 15:20:41.274  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8080
+2022-09-21 15:20:42.521  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Started PrjMicroClientesApplication in 14.899 seconds (JVM running for 15.829)
+2022-09-21 15:20:45.862  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:20:58.346  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:883)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:21:15.369  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:22:33.353  INFO LIM-FVJ98C3 --- [ctor-http-nio-3] o.m.d.cluster                            : No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1289/0x000000080078bc40@5fa3ee00 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=locahost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: Host desconocido (locahost)}, caused by {java.net.UnknownHostException: Host desconocido (locahost)}}]}. Waiting for 30000 ms before timing out
+2022-09-21 15:22:33.356  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:23:03.398  INFO LIM-FVJ98C3 --- [4b03328a8b29bba] o.m.d.cluster                            : No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=locahost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: locahost}, caused by {java.net.UnknownHostException: locahost}}]}. Waiting for 30000 ms before timing out
+2022-09-21 15:23:13.064  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:23:13.567  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:26:20.920  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:27:48.565  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:883)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:28:17.743  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:28:56.938  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:29:45.296  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:31:10.512  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:31:58.871  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:32:11.185  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:883)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:32:40.358  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:37:42.257  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:39:16.682  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:39:55.845  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:40:44.205  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:41:06.508  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:41:54.920  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:43:20.160  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:44:20.915  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:47:15.910  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:48:34.536  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:49:43.063  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:50:31.487  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:51:10.684  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:52:40.595  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:53:26.638  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:883)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:54:25.037  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:55:04.281  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:55:52.637  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:57:13.395  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 15:59:16.956  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: Host desconocido (locahost)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: Host desconocido (locahost)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 16:00:08.442  INFO LIM-FVJ98C3 --- [-locahost:27017] o.m.d.cluster                            : Exception in monitor thread while connecting to server locahost:27017
+com.mongodb.MongoSocketException: locahost
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217)
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163)
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: locahost
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209)
+	... 6 more
+2022-09-21 16:00:20.804  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-21 16:00:24.456  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microcliente, profiles=[default], label=null, version=8f451f6308bcc783cb48003b56a9117c57d44b7f, state=null
+2022-09-21 16:00:24.458  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-12793073977715413643\microcliente.yml'}]
+2022-09-21 16:00:24.462  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 16:00:25.067  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-21 16:00:25.124  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 Reactive MongoDB repository interfaces.
+2022-09-21 16:00:25.262  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=739a2add-111f-318c-9474-8987365f81ac
+2022-09-21 16:00:25.895  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@11399548, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@610fbe1c], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@46d0f89c]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@570b2057], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-21 16:00:26.648  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:217}] to localhost:27017
+2022-09-21 16:00:26.649  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=152841700}
+2022-09-21 16:00:26.649  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:218}] to localhost:27017
+2022-09-21 16:00:27.251  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-21 16:00:27.783  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8080
+2022-09-21 16:00:28.416  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Started PrjMicroClientesApplication in 8.971 seconds (JVM running for 9.972)
+2022-09-21 16:01:28.558  INFO LIM-FVJ98C3 --- [ntLoopGroup-3-3] o.m.d.connection                         : Opened connection [connectionId{localValue:3, serverValue:219}] to localhost:27017
+2022-09-21 17:13:36.375  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-21 17:13:41.320  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microcliente, profiles=[default], label=null, version=06fb4b2bbe593457a6faa4dcff2e07bd248fdafb, state=null
+2022-09-21 17:13:41.321  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-4730587420493038349\microcliente.yml'}]
+2022-09-21 17:13:41.326  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 17:13:41.978  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-21 17:13:42.031  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 Reactive MongoDB repository interfaces.
+2022-09-21 17:13:42.160  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=739a2add-111f-318c-9474-8987365f81ac
+2022-09-21 17:13:42.780  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@a457c2b, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@16a6dc21], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@5773d271]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@59f45950], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-21 17:13:43.400  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:220}] to localhost:27017
+2022-09-21 17:13:43.411  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:221}] to localhost:27017
+2022-09-21 17:13:43.413  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=73407000}
+2022-09-21 17:13:44.064  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-21 17:13:44.566  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8087
+2022-09-21 17:13:45.219  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Started PrjMicroClientesApplication in 10.231 seconds (JVM running for 11.054)
+2022-09-21 17:21:48.886  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-21 17:21:50.058  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microcliente, profiles=[default], label=null, version=06fb4b2bbe593457a6faa4dcff2e07bd248fdafb, state=null
+2022-09-21 17:21:50.059  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-4730587420493038349\microcliente.yml'}]
+2022-09-21 17:21:50.063  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 17:21:50.692  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-21 17:21:50.753  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 Reactive MongoDB repository interfaces.
+2022-09-21 17:21:50.875  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=739a2add-111f-318c-9474-8987365f81ac
+2022-09-21 17:21:51.482  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@5773d271, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@59f45950], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@7871d261]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@58164e9a], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-21 17:21:52.129  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:223}] to localhost:27017
+2022-09-21 17:21:52.132  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=102063000}
+2022-09-21 17:21:52.135  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:222}] to localhost:27017
+2022-09-21 17:21:52.817  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-21 17:21:53.603  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8087
+2022-09-21 17:21:54.259  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Started PrjMicroClientesApplication in 6.705 seconds (JVM running for 7.594)
+2022-09-21 17:23:06.881  INFO LIM-FVJ98C3 --- [ntLoopGroup-3-3] o.m.d.connection                         : Opened connection [connectionId{localValue:3, serverValue:224}] to localhost:27017
+2022-09-21 17:27:10.478  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-21 17:27:11.900  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microcliente, profiles=[default], label=null, version=06fb4b2bbe593457a6faa4dcff2e07bd248fdafb, state=null
+2022-09-21 17:27:11.901  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-4730587420493038349\microcliente.yml'}]
+2022-09-21 17:27:11.904  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 17:27:12.597  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-21 17:27:12.655  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 Reactive MongoDB repository interfaces.
+2022-09-21 17:27:12.792  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=739a2add-111f-318c-9474-8987365f81ac
+2022-09-21 17:27:13.466  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@570b2057, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@a457c2b], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@16a6dc21]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@5773d271], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-21 17:27:13.619  WARN LIM-FVJ98C3 --- [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientePersonalController': Unsatisfied dependency expressed through field 'iClientePersonalService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientePersonalService': Unsatisfied dependency expressed through field 'iClientePersonalRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IClientePersonalRepository' defined in pe.com.nttdata.cliente.repository.IClientePersonalRepository defined in @EnableReactiveMongoRepositories declared on MongoReactiveRepositoriesRegistrar.EnableReactiveMongoRepositoriesConfiguration: Cannot resolve reference to bean 'reactiveMongoTemplate' while setting bean property 'reactiveMongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reactiveMongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'reactiveMongoTemplate' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Attempt to add explicit id property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.Cliente.id but already have an property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.ClienteEmpresarial.id registered as explicit id. Check your mapping configuration!
+2022-09-21 17:27:16.111  INFO LIM-FVJ98C3 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-21 17:27:16.159 ERROR LIM-FVJ98C3 --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientePersonalController': Unsatisfied dependency expressed through field 'iClientePersonalService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientePersonalService': Unsatisfied dependency expressed through field 'iClientePersonalRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IClientePersonalRepository' defined in pe.com.nttdata.cliente.repository.IClientePersonalRepository defined in @EnableReactiveMongoRepositories declared on MongoReactiveRepositoriesRegistrar.EnableReactiveMongoRepositoriesConfiguration: Cannot resolve reference to bean 'reactiveMongoTemplate' while setting bean property 'reactiveMongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reactiveMongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'reactiveMongoTemplate' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Attempt to add explicit id property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.Cliente.id but already have an property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.ClienteEmpresarial.id registered as explicit id. Check your mapping configuration!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at pe.com.nttdata.PrjMicroClientesApplication.main(PrjMicroClientesApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientePersonalService': Unsatisfied dependency expressed through field 'iClientePersonalRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IClientePersonalRepository' defined in pe.com.nttdata.cliente.repository.IClientePersonalRepository defined in @EnableReactiveMongoRepositories declared on MongoReactiveRepositoriesRegistrar.EnableReactiveMongoRepositoriesConfiguration: Cannot resolve reference to bean 'reactiveMongoTemplate' while setting bean property 'reactiveMongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reactiveMongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'reactiveMongoTemplate' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Attempt to add explicit id property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.Cliente.id but already have an property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.ClienteEmpresarial.id registered as explicit id. Check your mapping configuration!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 20 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IClientePersonalRepository' defined in pe.com.nttdata.cliente.repository.IClientePersonalRepository defined in @EnableReactiveMongoRepositories declared on MongoReactiveRepositoriesRegistrar.EnableReactiveMongoRepositoriesConfiguration: Cannot resolve reference to bean 'reactiveMongoTemplate' while setting bean property 'reactiveMongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reactiveMongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'reactiveMongoTemplate' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Attempt to add explicit id property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.Cliente.id but already have an property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.ClienteEmpresarial.id registered as explicit id. Check your mapping configuration!
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reactiveMongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'reactiveMongoTemplate' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Attempt to add explicit id property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.Cliente.id but already have an property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.ClienteEmpresarial.id registered as explicit id. Check your mapping configuration!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 47 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Attempt to add explicit id property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.Cliente.id but already have an property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.ClienteEmpresarial.id registered as explicit id. Check your mapping configuration!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 57 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Attempt to add explicit id property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.Cliente.id but already have an property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.ClienteEmpresarial.id registered as explicit id. Check your mapping configuration!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 71 more
+Caused by: org.springframework.data.mapping.MappingException: Attempt to add explicit id property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.Cliente.id but already have an property private org.bson.types.ObjectId pe.com.nttdata.cliente.model.ClienteEmpresarial.id registered as explicit id. Check your mapping configuration!
+	at org.springframework.data.mongodb.core.mapping.BasicMongoPersistentEntity.returnPropertyIfBetterIdPropertyCandidateOrNull(BasicMongoPersistentEntity.java:305)
+	at org.springframework.data.mongodb.core.mapping.BasicMongoPersistentEntity.returnPropertyIfBetterIdPropertyCandidateOrNull(BasicMongoPersistentEntity.java:60)
+	at org.springframework.data.mapping.model.BasicPersistentEntity.addPersistentProperty(BasicPersistentEntity.java:233)
+	at org.springframework.data.mapping.context.AbstractMappingContext$PersistentPropertyCreator.createAndRegisterProperty(AbstractMappingContext.java:617)
+	at org.springframework.data.mapping.context.AbstractMappingContext$PersistentPropertyCreator.doWith(AbstractMappingContext.java:581)
+	at org.springframework.util.ReflectionUtils.doWithFields(ReflectionUtils.java:714)
+	at org.springframework.data.mapping.context.AbstractMappingContext.doAddPersistentEntity(AbstractMappingContext.java:449)
+	at org.springframework.data.mapping.context.AbstractMappingContext.addPersistentEntity(AbstractMappingContext.java:406)
+	at org.springframework.data.mapping.context.AbstractMappingContext.addPersistentEntity(AbstractMappingContext.java:366)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.data.mapping.context.AbstractMappingContext.initialize(AbstractMappingContext.java:519)
+	at org.springframework.data.mapping.context.AbstractMappingContext.afterPropertiesSet(AbstractMappingContext.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 82 more
+2022-09-21 17:31:16.512  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-21 17:31:17.720  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microcliente, profiles=[default], label=null, version=06fb4b2bbe593457a6faa4dcff2e07bd248fdafb, state=null
+2022-09-21 17:31:17.721  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-4730587420493038349\microcliente.yml'}]
+2022-09-21 17:31:17.727  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-21 17:31:18.368  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-09-21 17:31:18.421  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 Reactive MongoDB repository interfaces.
+2022-09-21 17:31:18.567  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=739a2add-111f-318c-9474-8987365f81ac
+2022-09-21 17:31:19.217  INFO LIM-FVJ98C3 --- [           main] o.m.d.client                             : MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@570b2057, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@a457c2b], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@16a6dc21]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@5773d271], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-21 17:31:19.830  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:1, serverValue:225}] to localhost:27017
+2022-09-21 17:31:19.830  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.connection                         : Opened connection [connectionId{localValue:2, serverValue:226}] to localhost:27017
+2022-09-21 17:31:19.831  INFO LIM-FVJ98C3 --- [localhost:27017] o.m.d.cluster                            : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=55740600}
+2022-09-21 17:31:20.491  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-21 17:31:20.990  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8087
+2022-09-21 17:31:21.684  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroClientesApplication        : Started PrjMicroClientesApplication in 6.484 seconds (JVM running for 7.367)
+2022-09-21 17:32:56.190  INFO LIM-FVJ98C3 --- [ntLoopGroup-3-3] o.m.d.connection                         : Opened connection [connectionId{localValue:3, serverValue:227}] to localhost:27017

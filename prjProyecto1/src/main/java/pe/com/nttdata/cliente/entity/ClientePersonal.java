@@ -21,12 +21,12 @@ public class ClientePersonal extends Cliente {
 	@Id
 	private ObjectId id;
 
-	private CtaBancaria ctaBancaria;
+	//private CtaBancaria ctaBancaria;
 
-	private CreditoPersonal creditoPersonal;
+	//private CreditoPersonal creditoPersonal;
 	
-	public ClientePersonal() {
-		super.setType(ETipoCliente.PERSONAL);
-	}
+	//public ClientePersonal() {
+	//	super.setType(ETipoCliente.PERSONAL);
+	//}
 	
 }

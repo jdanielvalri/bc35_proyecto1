@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jdanielvalri/config_data.git
+          #searchPaths: config-data
+          username: jdanielvalri
+          password: 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
+  security:
+    user:
+      name: root
+      password: s3cr3t

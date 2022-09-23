@@ -1,0 +1,90 @@
+2022-09-23 13:02:53.586  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-23 13:02:57.943  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=87c7fedc2a9c3b5add406bec596d8f817656fded, state=null
+2022-09-23 13:02:57.944  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-3365096486939301863\microproducto.yml'}]
+2022-09-23 13:02:57.949  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-09-23 13:02:58.577  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-23 13:02:58.596  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2022-09-23 13:02:58.734  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=89ae547c-1152-3253-b7d2-fb5f76fa4617
+2022-09-23 13:02:58.999  WARN LIM-FVJ98C3 --- [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-09-23 13:02:59.021  INFO LIM-FVJ98C3 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-23 13:02:59.043 ERROR LIM-FVJ98C3 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-09-23 13:22:44.090  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-23 13:22:45.133  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=87c7fedc2a9c3b5add406bec596d8f817656fded, state=null
+2022-09-23 13:22:45.134  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-3365096486939301863\microproducto.yml'}]
+2022-09-23 13:22:45.138  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-09-23 13:22:45.684  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-23 13:22:45.702  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2022-09-23 13:22:45.835  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=89ae547c-1152-3253-b7d2-fb5f76fa4617
+2022-09-23 13:22:46.056  WARN LIM-FVJ98C3 --- [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-09-23 13:22:46.076  INFO LIM-FVJ98C3 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-23 13:22:46.093 ERROR LIM-FVJ98C3 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-09-23 13:24:50.115  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-23 13:24:51.232  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=87c7fedc2a9c3b5add406bec596d8f817656fded, state=null
+2022-09-23 13:24:51.233  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-3365096486939301863\microproducto.yml'}]
+2022-09-23 13:24:51.237  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-09-23 13:24:51.826  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-23 13:24:51.846  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2022-09-23 13:24:51.991  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=89ae547c-1152-3253-b7d2-fb5f76fa4617
+2022-09-23 13:24:52.203  WARN LIM-FVJ98C3 --- [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-09-23 13:24:52.221  INFO LIM-FVJ98C3 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-23 13:24:52.237 ERROR LIM-FVJ98C3 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
