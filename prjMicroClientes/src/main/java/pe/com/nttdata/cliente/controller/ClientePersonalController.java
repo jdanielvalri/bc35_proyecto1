@@ -27,4 +27,5 @@ public class ClientePersonalController {
     public Flux<ClientePersonal> find(){
         return iClientePersonalService.listar();
     }
-}
+
+   }

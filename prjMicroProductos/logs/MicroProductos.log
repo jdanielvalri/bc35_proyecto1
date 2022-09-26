@@ -88,3 +88,22 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
+2022-09-23 13:29:30.566  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-23 13:29:31.733  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=87c7fedc2a9c3b5add406bec596d8f817656fded, state=null
+2022-09-23 13:29:31.735  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-3365096486939301863\microproducto.yml'}]
+2022-09-23 13:29:31.743  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-09-23 13:29:32.445  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-23 13:29:32.468  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2022-09-23 13:29:32.635  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=89ae547c-1152-3253-b7d2-fb5f76fa4617
+2022-09-23 13:29:33.007  INFO LIM-FVJ98C3 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-23 13:29:33.097  INFO LIM-FVJ98C3 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-23 13:29:33.216  INFO LIM-FVJ98C3 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-23 13:29:33.527  INFO LIM-FVJ98C3 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-09-23 13:29:33.817  INFO LIM-FVJ98C3 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-09-23 13:29:33.835  INFO LIM-FVJ98C3 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-09-23 13:29:34.043  INFO LIM-FVJ98C3 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-23 13:29:34.053  INFO LIM-FVJ98C3 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-23 13:29:34.696  INFO LIM-FVJ98C3 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static pe.com.nttdata.product.credit.service.IExternalClientService pe.com.nttdata.product.credit.service.impl.CreditService.externalClientService
+2022-09-23 13:29:35.194  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-23 13:29:35.813  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8086
+2022-09-23 13:29:36.353  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : Started PrjMicroProductosApplication in 7.074 seconds (JVM running for 7.793)
