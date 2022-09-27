@@ -1,5 +1,6 @@
 package pe.com.nttdata.cliente.service;
 
+import pe.com.nttdata.cliente.dto.DtoClientePersonal;
 import pe.com.nttdata.cliente.model.Cliente;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -14,5 +15,7 @@ public interface IClienteService <T extends Cliente> {
 
     Flux<T> listar();
 
-    Mono<T> obtener(String codigo);
+    Mono<T> obtener(Integer id);
+
+    Mono<DtoClientePersonal> obtenerDetalle(Integer id);
 }

@@ -17,7 +17,7 @@ public interface ICreditRepository {
 	List<Credit> findAll();
 	
 	Credit findById(Integer id);
-	
+
 	List<Credit> findByIdClient(Integer idClient);
 	
 	void AddPayment(Integer idCredit, CreditPayment creditPayment);

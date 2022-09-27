@@ -1,109 +1,142 @@
-2022-09-23 13:02:53.586  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
-2022-09-23 13:02:57.943  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=87c7fedc2a9c3b5add406bec596d8f817656fded, state=null
-2022-09-23 13:02:57.944  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-3365096486939301863\microproducto.yml'}]
-2022-09-23 13:02:57.949  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
-2022-09-23 13:02:58.577  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-23 13:02:58.596  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
-2022-09-23 13:02:58.734  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=89ae547c-1152-3253-b7d2-fb5f76fa4617
-2022-09-23 13:02:58.999  WARN LIM-FVJ98C3 --- [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-09-23 13:02:59.021  INFO LIM-FVJ98C3 --- [           main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-09-23 13:02:59.043 ERROR LIM-FVJ98C3 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2022-09-23 13:22:44.090  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
-2022-09-23 13:22:45.133  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=87c7fedc2a9c3b5add406bec596d8f817656fded, state=null
-2022-09-23 13:22:45.134  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-3365096486939301863\microproducto.yml'}]
-2022-09-23 13:22:45.138  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
-2022-09-23 13:22:45.684  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-23 13:22:45.702  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
-2022-09-23 13:22:45.835  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=89ae547c-1152-3253-b7d2-fb5f76fa4617
-2022-09-23 13:22:46.056  WARN LIM-FVJ98C3 --- [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-09-23 13:22:46.076  INFO LIM-FVJ98C3 --- [           main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-09-23 13:22:46.093 ERROR LIM-FVJ98C3 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2022-09-23 13:24:50.115  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
-2022-09-23 13:24:51.232  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=87c7fedc2a9c3b5add406bec596d8f817656fded, state=null
-2022-09-23 13:24:51.233  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-3365096486939301863\microproducto.yml'}]
-2022-09-23 13:24:51.237  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
-2022-09-23 13:24:51.826  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-23 13:24:51.846  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
-2022-09-23 13:24:51.991  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=89ae547c-1152-3253-b7d2-fb5f76fa4617
-2022-09-23 13:24:52.203  WARN LIM-FVJ98C3 --- [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-09-23 13:24:52.221  INFO LIM-FVJ98C3 --- [           main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-09-23 13:24:52.237 ERROR LIM-FVJ98C3 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2022-09-23 13:29:30.566  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
-2022-09-23 13:29:31.733  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=87c7fedc2a9c3b5add406bec596d8f817656fded, state=null
-2022-09-23 13:29:31.735  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-3365096486939301863\microproducto.yml'}]
-2022-09-23 13:29:31.743  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
-2022-09-23 13:29:32.445  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-23 13:29:32.468  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
-2022-09-23 13:29:32.635  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=89ae547c-1152-3253-b7d2-fb5f76fa4617
-2022-09-23 13:29:33.007  INFO LIM-FVJ98C3 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-09-23 13:29:33.097  INFO LIM-FVJ98C3 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.10.Final
-2022-09-23 13:29:33.216  INFO LIM-FVJ98C3 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-09-23 13:29:33.527  INFO LIM-FVJ98C3 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
-2022-09-23 13:29:33.817  INFO LIM-FVJ98C3 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
-2022-09-23 13:29:33.835  INFO LIM-FVJ98C3 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2022-09-23 13:29:34.043  INFO LIM-FVJ98C3 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-09-23 13:29:34.053  INFO LIM-FVJ98C3 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-09-23 13:29:34.696  INFO LIM-FVJ98C3 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static pe.com.nttdata.product.credit.service.IExternalClientService pe.com.nttdata.product.credit.service.impl.CreditService.externalClientService
-2022-09-23 13:29:35.194  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-09-23 13:29:35.813  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8086
-2022-09-23 13:29:36.353  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : Started PrjMicroProductosApplication in 7.074 seconds (JVM running for 7.793)
+2022-09-27 16:17:13.404  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-27 16:17:14.882  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=23e1ebc768acaf5aa1833a98c7c47ddce65d07fa, state=null
+2022-09-27 16:17:14.883  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-11123091194590723084\microproducto.yml'}]
+2022-09-27 16:17:14.889  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-09-27 16:17:15.593  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-27 16:17:15.610  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2022-09-27 16:17:15.830  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=5eef0aa0-64bc-391e-a8a8-1539dc04720c
+2022-09-27 16:17:16.141  INFO LIM-FVJ98C3 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 16:17:16.145  INFO LIM-FVJ98C3 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 16:17:16.148  INFO LIM-FVJ98C3 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 16:17:16.433  INFO LIM-FVJ98C3 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-27 16:17:16.523  INFO LIM-FVJ98C3 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-27 16:17:16.666  INFO LIM-FVJ98C3 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-27 16:17:16.999  INFO LIM-FVJ98C3 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-09-27 16:17:17.321  INFO LIM-FVJ98C3 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-09-27 16:17:17.336  INFO LIM-FVJ98C3 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-09-27 16:17:17.519  INFO LIM-FVJ98C3 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-27 16:17:17.531  INFO LIM-FVJ98C3 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-27 16:17:18.252  INFO LIM-FVJ98C3 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static pe.com.nttdata.product.credit.service.IExternalClientService pe.com.nttdata.product.credit.service.impl.CreditService.externalClientService
+2022-09-27 16:17:19.244  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-27 16:17:20.061  INFO LIM-FVJ98C3 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-27 16:17:20.200  WARN LIM-FVJ98C3 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-27 16:17:20.236  INFO LIM-FVJ98C3 --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2022-09-27 16:17:20.265  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2022-09-27 16:17:20.269  INFO LIM-FVJ98C3 --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 16:17:20.292  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2022-09-27 16:17:20.293  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2022-09-27 16:17:20.293  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2022-09-27 16:17:20.293  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2022-09-27 16:17:20.293  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2022-09-27 16:17:20.293  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2022-09-27 16:17:20.293  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2022-09-27 16:17:20.436  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2022-09-27 16:17:20.439  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2022-09-27 16:17:20.441  INFO LIM-FVJ98C3 --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-09-27 16:17:20.445  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1664313440445 with initial instances count: 3
+2022-09-27 16:17:20.453  INFO LIM-FVJ98C3 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROPRODUCTO with eureka with status UP
+2022-09-27 16:17:20.454  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1664313440454, current=UP, previous=STARTING]
+2022-09-27 16:17:20.457  INFO LIM-FVJ98C3 --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_MICROPRODUCTO/LIM-FVJ98C3.usersad.everis.int:microproducto:8086: registering service...
+2022-09-27 16:17:20.497  INFO LIM-FVJ98C3 --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_MICROPRODUCTO/LIM-FVJ98C3.usersad.everis.int:microproducto:8086 - registration status: 204
+2022-09-27 16:17:20.686  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8086
+2022-09-27 16:17:20.687  INFO LIM-FVJ98C3 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2022-09-27 16:17:21.208  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : Started PrjMicroProductosApplication in 9.041 seconds (JVM running for 9.955)
+2022-09-27 16:22:20.304  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 16:23:46.376  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-27 16:23:47.397  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=23e1ebc768acaf5aa1833a98c7c47ddce65d07fa, state=null
+2022-09-27 16:23:47.398  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-11123091194590723084\microproducto.yml'}]
+2022-09-27 16:23:47.403  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-09-27 16:23:48.234  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-27 16:23:48.251  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2022-09-27 16:23:48.464  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=5eef0aa0-64bc-391e-a8a8-1539dc04720c
+2022-09-27 16:23:48.718  INFO LIM-FVJ98C3 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 16:23:48.723  INFO LIM-FVJ98C3 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 16:23:48.728  INFO LIM-FVJ98C3 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 16:23:49.002  INFO LIM-FVJ98C3 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-27 16:23:49.036  INFO LIM-FVJ98C3 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-27 16:23:49.133  INFO LIM-FVJ98C3 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-27 16:23:49.394  INFO LIM-FVJ98C3 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-09-27 16:23:49.643  INFO LIM-FVJ98C3 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-09-27 16:23:49.653  INFO LIM-FVJ98C3 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-09-27 16:23:49.796  INFO LIM-FVJ98C3 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-27 16:23:49.804  INFO LIM-FVJ98C3 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-27 16:23:50.530  INFO LIM-FVJ98C3 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static pe.com.nttdata.product.credit.service.IExternalClientService pe.com.nttdata.product.credit.service.impl.CreditService.externalClientService
+2022-09-27 16:23:51.578  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-27 16:23:52.387  INFO LIM-FVJ98C3 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-27 16:23:52.565  WARN LIM-FVJ98C3 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-27 16:23:52.604  INFO LIM-FVJ98C3 --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2022-09-27 16:23:52.634  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2022-09-27 16:23:52.638  INFO LIM-FVJ98C3 --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 16:23:52.656  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2022-09-27 16:23:52.656  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2022-09-27 16:23:52.656  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2022-09-27 16:23:52.657  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2022-09-27 16:23:52.657  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2022-09-27 16:23:52.657  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2022-09-27 16:23:52.657  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2022-09-27 16:23:52.800  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2022-09-27 16:23:52.803  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2022-09-27 16:23:52.805  INFO LIM-FVJ98C3 --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-09-27 16:23:52.809  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1664313832809 with initial instances count: 4
+2022-09-27 16:23:52.817  INFO LIM-FVJ98C3 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROPRODUCTO with eureka with status UP
+2022-09-27 16:23:52.819  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1664313832818, current=UP, previous=STARTING]
+2022-09-27 16:23:52.820  INFO LIM-FVJ98C3 --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_MICROPRODUCTO/LIM-FVJ98C3.usersad.everis.int:microproducto:8086: registering service...
+2022-09-27 16:23:52.853  INFO LIM-FVJ98C3 --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_MICROPRODUCTO/LIM-FVJ98C3.usersad.everis.int:microproducto:8086 - registration status: 204
+2022-09-27 16:23:53.037  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8086
+2022-09-27 16:23:53.039  INFO LIM-FVJ98C3 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2022-09-27 16:23:53.548  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : Started PrjMicroProductosApplication in 8.678 seconds (JVM running for 9.513)
+2022-09-27 16:28:52.661  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 16:33:52.669  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 16:38:52.674  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 16:41:50.408  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8084
+2022-09-27 16:41:51.750  INFO LIM-FVJ98C3 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=microproducto, profiles=[default], label=null, version=23e1ebc768acaf5aa1833a98c7c47ddce65d07fa, state=null
+2022-09-27 16:41:51.750  INFO LIM-FVJ98C3 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/jdanielvalri/config_data.git/file:C:\Users\jvalenri\AppData\Local\Temp\config-repo-11123091194590723084\microproducto.yml'}]
+2022-09-27 16:41:51.754  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-09-27 16:41:52.519  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-27 16:41:52.535  INFO LIM-FVJ98C3 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2022-09-27 16:41:52.771  INFO LIM-FVJ98C3 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=5eef0aa0-64bc-391e-a8a8-1539dc04720c
+2022-09-27 16:41:52.960  INFO LIM-FVJ98C3 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 16:41:52.964  INFO LIM-FVJ98C3 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 16:41:52.967  INFO LIM-FVJ98C3 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 16:41:53.223  INFO LIM-FVJ98C3 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-27 16:41:53.254  INFO LIM-FVJ98C3 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-27 16:41:53.348  INFO LIM-FVJ98C3 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-27 16:41:53.621  INFO LIM-FVJ98C3 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-09-27 16:41:53.868  INFO LIM-FVJ98C3 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-09-27 16:41:53.877  INFO LIM-FVJ98C3 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-09-27 16:41:54.031  INFO LIM-FVJ98C3 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-27 16:41:54.039  INFO LIM-FVJ98C3 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-27 16:41:54.772  INFO LIM-FVJ98C3 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static pe.com.nttdata.product.credit.service.IExternalClientService pe.com.nttdata.product.credit.service.impl.CreditService.externalClientService
+2022-09-27 16:41:55.732  INFO LIM-FVJ98C3 --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-27 16:41:56.541  INFO LIM-FVJ98C3 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-27 16:41:56.673  WARN LIM-FVJ98C3 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-27 16:41:56.710  INFO LIM-FVJ98C3 --- [           main] o.s.c.n.e.InstanceInfoFactory            : Setting initial instance status as: STARTING
+2022-09-27 16:41:56.740  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Initializing Eureka in region us-east-1
+2022-09-27 16:41:56.744  INFO LIM-FVJ98C3 --- [           main] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 16:41:56.768  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Disable delta property : false
+2022-09-27 16:41:56.768  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Single vip registry refresh property : null
+2022-09-27 16:41:56.768  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Force full registry fetch : false
+2022-09-27 16:41:56.769  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Application is null : false
+2022-09-27 16:41:56.769  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Registered Applications size is zero : true
+2022-09-27 16:41:56.769  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Application version is -1: true
+2022-09-27 16:41:56.769  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Getting all instance registry info from the eureka server
+2022-09-27 16:41:56.917  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : The response status is 200
+2022-09-27 16:41:56.920  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Starting heartbeat executor: renew interval is: 30
+2022-09-27 16:41:56.923  INFO LIM-FVJ98C3 --- [           main] c.n.d.InstanceInfoReplicator             : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-09-27 16:41:56.927  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Discovery Client initialized at timestamp 1664314916926 with initial instances count: 4
+2022-09-27 16:41:56.935  INFO LIM-FVJ98C3 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MICROPRODUCTO with eureka with status UP
+2022-09-27 16:41:56.935  INFO LIM-FVJ98C3 --- [           main] c.n.d.DiscoveryClient                    : Saw local status change event StatusChangeEvent [timestamp=1664314916935, current=UP, previous=STARTING]
+2022-09-27 16:41:56.937  INFO LIM-FVJ98C3 --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_MICROPRODUCTO/LIM-FVJ98C3.usersad.everis.int:microproducto:8086: registering service...
+2022-09-27 16:41:56.977  INFO LIM-FVJ98C3 --- [nfoReplicator-0] c.n.d.DiscoveryClient                    : DiscoveryClient_MICROPRODUCTO/LIM-FVJ98C3.usersad.everis.int:microproducto:8086 - registration status: 204
+2022-09-27 16:41:57.170  INFO LIM-FVJ98C3 --- [           main] o.s.b.w.e.n.NettyWebServer               : Netty started on port 8086
+2022-09-27 16:41:57.171  INFO LIM-FVJ98C3 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2022-09-27 16:41:57.692  INFO LIM-FVJ98C3 --- [           main] p.c.n.PrjMicroProductosApplication       : Started PrjMicroProductosApplication in 8.435 seconds (JVM running for 9.307)
+2022-09-27 16:46:56.776  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 16:51:56.781  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 16:56:56.796  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 17:01:56.804  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 17:06:56.817  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 17:11:56.819  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 17:16:56.834  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 17:21:56.836  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration
+2022-09-27 17:26:56.845  INFO LIM-FVJ98C3 --- [trap-executor-0] c.n.d.s.r.a.ConfigClusterResolver        : Resolving eureka endpoints via configuration

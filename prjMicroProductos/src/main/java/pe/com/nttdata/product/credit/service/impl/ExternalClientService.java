@@ -6,6 +6,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
 import pe.com.nttdata.product.client.entity.Client;
 import pe.com.nttdata.product.credit.service.IExternalClientService;
+import reactor.core.publisher.Mono;
 
 @Component
 public class ExternalClientService implements IExternalClientService {
@@ -16,11 +17,11 @@ public class ExternalClientService implements IExternalClientService {
 	private static final String uriBase = "http://localhost:8080/clients";
 	
 	@Override
-	public Client findById(Integer id) {
+	public Mono<Client> findById(Integer id) {
 		
 		String uri = uriBase+"/"+id;
 		
-		return (new RestTemplate()).getForObject(uri, Client.class);
+		return Mono.just (new RestTemplate().getForObject(uri, Client.class));
 		/*
 		return webClientBuilder.build()
 		.get()

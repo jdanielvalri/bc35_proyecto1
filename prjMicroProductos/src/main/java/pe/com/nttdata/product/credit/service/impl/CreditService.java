@@ -10,6 +10,8 @@ import pe.com.nttdata.product.credit.entity.CreditPayment;
 import pe.com.nttdata.product.credit.repository.ICreditRepository;
 import pe.com.nttdata.product.credit.service.ICreditService;
 import pe.com.nttdata.product.credit.service.IExternalClientService;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 
@@ -23,49 +25,50 @@ public class CreditService implements ICreditService {
 	private static IExternalClientService externalClientService ;
 	
 	@Override
-	public void create(Credit credit)  throws Exception {
+	public void create(Mono<Credit> credit)  throws Exception {
 		
-		credit.setClient(externalClientService.findById(credit.getClient().getId()));
+		credit.block().setClient(externalClientService.findById(credit.block().getClient().getId()).block());
 		
-		if(validRulesCredit(credit)== false)
+		if(validRulesCredit(credit.block())== false)
 			return;
 		
-		if(validCreditData(credit)== false)
+		if(validCreditData(credit.block())== false)
 			return;
 		
-		if(credit.getType() == CreditCard.EType.CARD)
-			((CreditCard)credit).setCreditAmountConsumed(0);
-		
-		creditRepository.create(credit);
+		if(credit.block().getType() == CreditCard.EType.CARD){
+			((CreditCard)credit.block()).setCreditAmountConsumed(0);
+		}
+
+		creditRepository.create(credit.block());
 		
 	}
 	
 
 	@Override
-	public void update(Credit credit)  throws Exception {
+	public void update(Mono<Credit> credit)  throws Exception {
 		
-		credit.setClient(externalClientService.findById(credit.getClient().getId()));
+		credit.block().setClient(externalClientService.findById(credit.block().getClient().getId()).block());
 		
-		Credit oldCredit = findById(credit.getId());
+		Mono<Credit> oldCredit = findById(credit.block().getId());
 		
-		if(validCreditDataRestrict(credit, oldCredit)== false)
+		if(validCreditDataRestrict(credit.block(), oldCredit.block())== false)
 			return;
 		
-		if(validCreditData(credit)== false)
+		if(validCreditData(credit.block())== false)
 			return;
 		
 		/*	Para evitar que se guarden estos campos por este medio	*/
 	
-		credit.setListPayments(oldCredit.getListPayments());
+		credit.block().setListPayments(oldCredit.block().getListPayments());
 		
-		if(credit.getType() == Credit.EType.CARD) {
-			CreditCard creditCard = ((CreditCard)credit);
-			creditCard.setListConsumptions((((CreditCard)oldCredit).getListConsumptions()));
+		if(credit.block().getType() == Credit.EType.CARD) {
+			CreditCard creditCard = ((CreditCard)credit.block());
+			creditCard.setListConsumptions((((CreditCard)oldCredit.block()).getListConsumptions()));
 			
-			creditCard.setCreditAmountConsumed(((CreditCard)oldCredit).getCreditAmountConsumed()); // Se actualiza en otro metodo
+			creditCard.setCreditAmountConsumed(((CreditCard)oldCredit.block()).getCreditAmountConsumed()); // Se actualiza en otro metodo
 		}		
 		
-		creditRepository.update(credit);
+		creditRepository.update(credit.block());
 	}
 	
 	private void updateCreditCardConsumedAmount(Integer idCreditCard, double amountConsumed) {
@@ -81,28 +84,29 @@ public class CreditService implements ICreditService {
 	}
 
 	@Override
-	public List<Credit> findAll() {
-		return creditRepository.findAll();
+	public Flux<Credit> findAll() {
+		return Flux.fromIterable(creditRepository.findAll());
 	}
 
 	@Override
-	public Credit findById(Integer id) {
-		return creditRepository.findById(id);
+	public Mono<Credit> findById(Integer id) {
+		return Mono.just(creditRepository.findById(id));
 	}
 
 	@Override
-	public List<Credit> findByIdClient(Integer idClient) {
-		return creditRepository.findByIdClient(idClient);
+	public Flux<Credit> findByIdClient(Integer idClient) {
+		return Flux.fromIterable(creditRepository.findByIdClient(idClient));
 	}
 
 	@Override
-	public void AddPayment(Integer idCredit, CreditPayment creditPayment) throws Exception {
-		Credit credit = findById(idCredit);
+	public void AddPayment(Integer idCredit, Mono<CreditPayment> creditPayment) throws Exception {
+		Mono<Credit> credit = findById(idCredit);
 		
-		if(validCreditPayment(credit, creditPayment) == false)
+		if(validCreditPayment(credit.block(), creditPayment.block()) == false) {
 			return;
+		}
 		
-		creditRepository.AddPayment(idCredit, creditPayment);
+		creditRepository.AddPayment(idCredit, creditPayment.block());
 	}
 	
 	private boolean validCreditPayment(Credit credit, CreditPayment creditPayment) throws Exception {
@@ -113,15 +117,15 @@ public class CreditService implements ICreditService {
 	
 
 	@Override
-	public void AddCreditCardConsumption(Integer idCreditCard, CreditCardConsumption creditCardConsumption) throws Exception {
-		CreditCard creditCard = (CreditCard)findById(idCreditCard);
+	public void AddCreditCardConsumption(Integer idCreditCard, Mono<CreditCardConsumption> creditCardConsumption) throws Exception {
+		CreditCard creditCard = (CreditCard)findById(idCreditCard).block();
 		
-		if(validCreditCardConsumption(creditCard, creditCardConsumption) == false)
+		if(validCreditCardConsumption(creditCard, creditCardConsumption.block()) == false)
 			return;
 		
-		creditRepository.AddCreditCardConsumption(idCreditCard, creditCardConsumption);
+		creditRepository.AddCreditCardConsumption(idCreditCard, creditCardConsumption.block());
 		
-		updateCreditCardConsumedAmount(idCreditCard, creditCardConsumption.getAmount());
+		updateCreditCardConsumedAmount(idCreditCard, creditCardConsumption.block().getAmount());
 		
 	}
 	
@@ -137,12 +141,12 @@ public class CreditService implements ICreditService {
 	
 	private boolean validRulesCredit(Credit credit) throws Exception {
 		
-		List<Credit> listCreditsOfClient = findByIdClient(credit.getClient().getId());
+		Flux<Credit> listCreditsOfClient = findByIdClient(credit.getClient().getId());
 		
 		if(credit.getClient().getType() == Client.EType.PERSONAL ) {
 			if(credit.getType() == Credit.EType.ENTERPRISE)
 				throw new Exception("Solo puede ser Credito Personal O Tarjeta de credito");
-			if(listCreditsOfClient.stream().filter(creditT -> creditT.getType() == Credit.EType.PERSONAL  ).count() > 0  ) {
+			if(listCreditsOfClient.collectList().block().stream().filter(creditT -> creditT.getType() == Credit.EType.PERSONAL  ).count() > 0  ) {
 				throw new Exception("El ciente solo puede tener un credito Personal");
 			}
 		}
@@ -153,7 +157,7 @@ public class CreditService implements ICreditService {
 		}
 		
 		if(credit.getType() == Credit.EType.CARD) {
-			if(listCreditsOfClient.stream().filter(creditT -> creditT.getType() == Credit.EType.CARD  ).count() > 0  ) {
+			if(listCreditsOfClient.collectList().block().stream().filter(creditT -> creditT.getType() == Credit.EType.CARD  ).count() > 0  ) {
 				throw new Exception("El ciente ya posee una tarjeta de credito");
 			}
 		}

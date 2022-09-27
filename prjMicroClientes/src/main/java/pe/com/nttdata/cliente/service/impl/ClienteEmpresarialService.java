@@ -2,6 +2,7 @@ package pe.com.nttdata.cliente.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pe.com.nttdata.cliente.dto.DtoClientePersonal;
 import pe.com.nttdata.cliente.model.ClienteEmpresarial;
 import pe.com.nttdata.cliente.repository.IClienteEmpresarialRepository;
 import pe.com.nttdata.cliente.service.IClienteEmpresarialService;
@@ -35,7 +36,13 @@ public class ClienteEmpresarialService implements IClienteEmpresarialService {
     }
 
     @Override
-    public Mono<ClienteEmpresarial> obtener(String codigo) {
-        return  iClienteEmpresarialRepository.findById(codigo);
+    public Mono<ClienteEmpresarial> obtener(Integer id) {
+
+        return  null;
+    }
+
+    @Override
+    public Mono<DtoClientePersonal> obtenerDetalle(Integer id) {
+        return null;
     }
 }

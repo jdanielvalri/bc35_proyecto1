@@ -1,5 +1,6 @@
 package pe.com.nttdata.product.client.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -12,6 +13,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
 public class Client {
 	
 	public enum EType {

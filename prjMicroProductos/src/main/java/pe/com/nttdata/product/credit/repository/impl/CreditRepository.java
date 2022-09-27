@@ -2,6 +2,7 @@ package pe.com.nttdata.product.credit.repository.impl;
 
 import org.springframework.stereotype.Repository;
 
+import pe.com.nttdata.product.client.entity.Client;
 import pe.com.nttdata.product.credit.entity.Credit;
 import pe.com.nttdata.product.credit.entity.CreditCard;
 import pe.com.nttdata.product.credit.entity.CreditCardConsumption;
@@ -42,6 +43,14 @@ public class CreditRepository implements ICreditRepository {
 
 	@Override
 	public List<Credit> findAll() {
+		List<Credit> listCredits = new ArrayList<>();
+		Credit credit= new Credit();
+		credit.setId(1);
+		credit.setCreditAmount(2000.00);
+		credit.setType(Credit.EType.PERSONAL);
+		credit.setClient(new Client(1,"daniel valenzuela",null,null, Client.EType.PERSONAL));
+		listCredits.add(credit);
+
 		return listCredits;
 	}
 
